@@ -1,5 +1,5 @@
 locals {
-  app = "${path.module}/../web-app" ## path to the static website.
+  app = "${path.module}/../webapp" ## path to the static website.
   mime_types = {
     "html" : "text/html",
     "htm" : "text/html", # Some older sites might still use .htm
