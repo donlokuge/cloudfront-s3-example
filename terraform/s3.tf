@@ -32,7 +32,7 @@ locals {
 }
 
 resource "aws_s3_bucket" "website_bucket" {
-  bucket = "my-static-website-bucket" # Bucket name
+  bucket = var.bucket_name # Bucket name
 }
 
 resource "aws_s3_bucket_public_access_block" "access" {
